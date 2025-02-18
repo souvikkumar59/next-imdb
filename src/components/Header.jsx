@@ -22,6 +22,7 @@ function Header() {
         <nav className='hidden md:flex gap-6'>
           <Link href='/' className='hover:text-yellow-500 transition duration-300'>Home</Link>
           <Link href='/about' className='hover:text-yellow-500 transition duration-300'>About</Link>
+          <Link href='/favourite' className='hover:text-yellow-500 transition duration-300'>Favourite</Link>
           <SignedIn>
             <UserButton />
           </SignedIn>
@@ -50,6 +51,7 @@ function Header() {
           <ul className='flex flex-col gap-4'>
             <li><Link href='/' onClick={() => setMenuOpen(false)}>Home</Link></li>
             <li><Link href='/about' onClick={() => setMenuOpen(false)}>About</Link></li>
+            <li><Link href='/favourite' onClick={() => setMenuOpen(false)}>Favourite</Link></li>
             <SignedIn>
               <li><UserButton /></li>
             </SignedIn>
